@@ -127,12 +127,21 @@ svg:hover {
   }
 
 .slider-box img{
-    object-fit: cover;
     width: 100%;
     display: block;
     max-height: 550px;
 }
 
+@media (max-width: 768px) {
+    .slider-box {
+        width: 100%; /* Ajusta el ancho del carrusel en móviles */
+        margin: 20px auto; /* Reduce el margen superior para mejor presentación */
+        height: 400px;
+    }
+    .slider-box img{
+        object-fit: cover;
+    }
+}
 
 
 /* Paquetes */
@@ -202,6 +211,27 @@ svg:hover {
     color: blanchedalmond;
     transition: all 0.5s;
 }
+/* CSS Animation */
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+  
+.fade-in-up {
+    opacity: 0; /* Hide elements initially */
+    animation: fadeInUp 1s ease forwards; /* Apply the animation */
+}
+  
+.card.hidden { /* Initial state, hidden */
+    opacity: 0;
+}
+  
 
 .paquetes__title{
     display: flex;
@@ -241,6 +271,28 @@ svg:hover {
     height: 550px;
     padding: 40px;
 }
+/* CSS para animación de entrada desde la izquierda */
+@keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .wine2 li {
+    opacity: 0; /* Ocultar elementos inicialmente */
+    transform: translateX(-50px); /* Iniciar desplazado hacia la izquierda */
+    transition: opacity 0.6s ease, transform 0.6s ease; /* Transición suave */
+  }
+  
+  .wine2 li.visible {
+    animation: slideInLeft 0.8s ease forwards; /* Aplicar la animación cuando se haga visible */
+  }
+  
 .section__comentarios{
     background-color: #4d1a1a;
     border-radius: 20px;
@@ -581,6 +633,7 @@ svg:hover {
     border-radius: 25px;
     min-height: 50vh;
 }
+
 
 .form-content h2 {
     color: #847974;
