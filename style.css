@@ -108,44 +108,31 @@ svg:hover {
 
 /*carrusel*/
 .slider-box{
-    margin: auto;
+    margin: 50px auto 0;
     justify-content: center;
-    width: 100%;
+    width: 80%;
     height: auto;
-    overflow: hidden;
+    overflow:hidden;
     position: center;
 }
-.slider-box ul{
+.slider-box ul {
     display: flex;
     padding: 0;
-    width: 400%;
-    animation: slide 20s infinite alternate ease-in-out;
+    margin: 0;
+    transition: transform 1.5s ease; /* Transición suave entre imágenes */
+    list-style-type: none;
 }
-.slider-box li{
-    width: 100%;
-    list-style: none;
-    position: relative;
-}
+.slider-box li {
+    min-width: 100%; /* Cada imagen ocupará el 100% del contenedor */
+  }
 
 .slider-box img{
-    padding: auto;
+    object-fit: cover;
     width: 100%;
-    max-height: 650px;
+    display: block;
+    max-height: 550px;
 }
-@keyframes slide{
-    0%{ margin-left: 0;}
-    20%{ margin-left: 0;}
 
-    25%{ margin-left: -100%; }
-    45%{ margin-left: -100%; }
-
-    50%{ margin-left: -200%; }
-    70%{ margin-left: -200%; }
-
-    75%{ margin-left: -300%; }
-    100%{ margin-left: -300%; }
-
-}
 
 
 /* Paquetes */
@@ -182,7 +169,13 @@ svg:hover {
     object-fit: cover;
     padding: 20px;
 }
-
+.titulo__card{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 20px;
+    padding: 0%;
+    margin: 0%;
+}
 .descrip__viaje {
     color: aliceblue;
     padding: 10px;
@@ -362,7 +355,10 @@ svg:hover {
     .section__comentarios, .contenedor {
         width: 95%;
     }
-
+    .titulo__card{
+        font-size: 15px;
+        margin: 5px auto 0;
+    }
     .contenedor {
         height: 280px;
     }
@@ -501,7 +497,7 @@ svg:hover {
             padding: 20px;
         }
     }
-    }
+    
 
     .volver {
         padding: 15px;

@@ -1,5 +1,5 @@
 let slider = document.querySelector('.slider-contenedor');
-let sliderInd = document.querySelectorAll('.slider-test'); // Suponiendo que selecciona múltiples elementos
+let sliderInd = document.querySelectorAll('.slider-test'); 
 let contador = 1;
 let tamañoWidth = sliderInd[0].clientWidth;
 let intervalo = 4000;
