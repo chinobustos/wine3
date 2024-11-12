@@ -145,13 +145,21 @@ svg:hover {
     75%{margin-left:-300% ; }
     100%{margin-left: -300%; }
 }
-
+@media (min-width: 1200px){
+    .slider_box {
+        width: 90%;
+    }
+    .slider_box img {
+        height: 550px;
+        object-fit: cover;
+    }
+}
 @media (max-width: 1200px) {
     .slider_box {
         width: 90%;
     }
     .slider_box img {
-        max-height: 400px;
+        height: 400px;
     }
 }
 
@@ -183,7 +191,7 @@ svg:hover {
         max-height: 80%;
     }
     .slider_box img {
-        height: 211px;
+        height: 215px;
     }
 }
 
@@ -1415,6 +1423,31 @@ svg:hover {
             max-width: 300px; /* Tamaño ajustado para tablets */
         }
     }
+    .cards{
+        width: 100%;
+    }
+    .card{
+        max-width: 90%;
+        max-height:90%;
+        padding: 0%;
+        margin: 30px auto 0;
+        img{
+            width: 100%;
+            min-height: 210px;
+            margin:0 ;
+            padding: 0%;
+            object-fit: cover;
+        }
+        p{
+            font-size: 12px;
+            text-align: center;
+            padding: 10px;
+        }
+        .button__card{
+            font-size: 15px;
+            padding: 5px;
+        }
+    }
 
     .descripcion__nosotros {
         margin: 20px;
@@ -1444,7 +1477,31 @@ svg:hover {
         flex-direction: column 90%;
         align-items: center;
     }
-
+    .cards{
+        width: 100%;
+    }
+    .card{
+        max-width: 90%;
+        max-height:90%;
+        padding: 0%;
+        margin: 30px auto 0;
+        img{
+            width: 100%;
+            min-height: 210px;
+            margin:0 ;
+            padding: 0%;
+            object-fit: cover;
+        }
+        p{
+            font-size: 12px;
+            text-align: center;
+            padding: 10px;
+        }
+        .button__card{
+            font-size: 15px;
+            padding: 5px;
+        }
+    }
     .descripcion__nosotros {
         margin: 20px;
         padding: 20px;
@@ -1485,6 +1542,28 @@ svg:hover {
         font-size: 20px;
         max-width:100%;
         text-align: left; /* Alineación izquierda para el texto en PC */
+    }
+    .card{
+        max-width: 90%;
+        height:450px;
+        padding: 0;
+        margin: 30px auto 0;
+        img{
+            width: 100%;
+            min-height: 210px;
+            margin:0 ;
+            padding: 0;
+            object-fit: cover;
+        }
+        p{
+            font-size: 15px;
+            text-align: center;
+            padding: 10px;
+        }
+        .button__card{
+            font-size: 15px;
+            padding: 10px;
+        }
     }
 }
 /* Base Styles (for larger screens like desktops) */
