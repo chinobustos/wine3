@@ -183,14 +183,14 @@ svg:hover {
         max-height: 80%;
     }
     .slider_box img {
-        max-height: 250px;
+        height: 211px;
     }
 }
 
 /* Teléfonos muy pequeños */
 @media (max-width: 400px) {
     .slider_box img {
-        min-height: 211px;
+        max-height: 211px;
     }
 }
 
@@ -218,7 +218,7 @@ svg:hover {
     max-height:90%;
     width:60%;
     background: linear-gradient(black, #614d3a);
-    margin: 100px;
+    margin: auto;
     border-radius: 10px 10px 20px 20px;
     box-shadow: 30px 3px 40px black;
 }
@@ -238,8 +238,9 @@ svg:hover {
 }
 .descrip__viaje {
     color: aliceblue;
-    padding: 10;
+    padding: 10px;
     font-size: 10px;
+    text-align: center;
     font-weight: 700;
 }
 
@@ -1363,7 +1364,7 @@ svg:hover {
         p{
             font-size: 12px;
             text-align: center;
-            padding: 0%;
+            padding: 10px;
         }
         .button__card{
             font-size: 15px;
