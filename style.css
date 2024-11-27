@@ -1797,98 +1797,45 @@ footer {
         object-fit: cover;
     }
 }
-.titulo__region{
+.titulo__tours {
+    h1 {
+        font-size: 20px;
+        padding: 0%;
+        margin: 0;
+        font-weight: 700;
+    }
     color: whitesmoke;
+    padding: 0px;
+    margin: 0%;
     text-align: center;
-    justify-content: center;
-    font-size: 40px;
-    font-weight: 700;
 
-}
-.card__tours{
-    background-color: #333646;
-    width: 90%;
-    min-height: 550px;
-    border-radius: 20px;
-    margin: auto;
-    img{
-        width: 100%;
-        min-height: 320px;
-        border-radius: 20px 20px 20px 20px;
+    @media (max-width: 1200px) { 
+        h1 {
+            font-size: 18px;
+        }
     }
-    p{
-        justify-content: flex-start;
-        font-size: 14px;
-        width: 100%;
-    }
-}
-.button__tour{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 100px;
-    background-color: #99496f;
-    padding: 15px;
-    a{
-        text-decoration: none;
-        color:whitesmoke;
-    }
-}
-.button__tour:hover{
-    background-color: #661111;
-    border: solid white;
-    transition: all .5s ;
-}
 
-.tour__titulo{
-    color:wheat;
-    font-weight: 700;
-    text-align:center;
-    font-size: 15px;
-    padding: 10px;
-}
-/* Small Devices (max-width: 600px) */
-@media (max-width: 600px) {
-    .card__tours {
-        width: 100%;
-        padding: 10px;
+    @media (max-width: 992px) {   
+        h1 {
+            font-size: 16px;
+        }
     }
-    
-    .button__tour {
-        padding: 10px;
-    }
-    
-    .tour__titulo {
-        font-size: 12px;
-    }
-}
 
-/* Medium Devices (min-width: 601px and max-width: 900px) */
-@media (min-width: 601px) and (max-width: 900px) {
-    .card__tours {
-        width: 95%;
+    @media (max-width: 768px) {  
+        h1 {
+            font-size: 14px;
+        }
     }
-    
-    .button__tour {
-        padding: 12px;
-    }
-    
-    .tour__titulo {
-        font-size: 14px;
-    }
-}
 
-/* Large Devices (min-width: 901px) */
-@media (min-width: 901px) {
-    .card__tours {
-        width: 90%;
+    @media (max-width: 576px) { 
+        h1 {
+            font-size: 12px;
+        }
     }
-    
-    .button__tour {
-        padding: 15px;
-    }
-    
-    .tour__titulo {
-        font-size: 16px;
+
+    @media (max-width: 360px) { 
+        h1 {
+            font-size: 10px;
+        }
     }
 }
