@@ -4,7 +4,61 @@ body {
     margin: 0;
     padding: 0; 
     font-family:'Quicksand';
-   background:linear-gradient(#800909,#661111,#4d1a1a,#332222,#1a2b2b);
+   background:black;
+}
+.header {
+    background: linear-gradient(#4d1a1a, black);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 700;
+}
+
+.nav-link{
+    color: #aeb18e;
+}
+.nav-link:hover{
+    transition: all 1.5s;
+    color: #99496f;
+}
+.list {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: #2e2926;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.link:hover {
+    color: #847974;
+    transition: all 0.5s;
+}
+
+.redes .red {
+    margin: 10px;
+}
+
+svg {
+    margin: 10px;
+    color: #aeb18e;
+    width: 45px;
+    height: auto;
+}
+
+svg:hover {
+    color: #2e2926;
+    overflow: hidden;
+    transition: all 0.5s;
 }
 .btn-wsp{
     position: fixed;
@@ -80,7 +134,7 @@ svg:hover {
 
 /* Home */
 .home {
-    background-image: url(./multimedia/degustacion\ \(1\).webp);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.432),rgba(0, 0, 0, 0.688),rgba(0, 0, 0, 0.492)), url(./multimedia/degustacion\ \(1\).webp);
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
@@ -308,61 +362,10 @@ svg:hover {
     color: #a68e79;
 
 }
-/* Vino */
-.wine {
-    margin: auto;
-    min-height: 90vh;
-}
 
-.wine h2 {
-    display: flex;
-    color: gainsboro;
-    font-size: 40px;
-    font-weight: 700;
-    justify-content: center;
-    text-align: center;
-}
 
-.wine2 {
-  display: flex;
-  align-items: center;
-    padding: 40px;
-}
-
-.wine2 p {
-    color: #8f7864;
-    font-size: 60px;
-    font-weight: 700;
-    justify-content: center;
-    border-radius: 20px;
-    box-shadow: 30px 30px 30px black;
-    height: 550px;
-    padding: 40px;
-}
-/* CSS para animación de entrada desde la izquierda */
-@keyframes slideInLeft {
-    from {
-      opacity: 0;
-      transform: translateX(-50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-  
-  .wine2 li {
-    opacity: 0; /* Ocultar elementos inicialmente */
-    transform: translateX(-50px); /* Iniciar desplazado hacia la izquierda */
-    transition: opacity 0.6s ease, transform 0.6s ease; /* Transición suave */
-  }
-  
-  .wine2 li.visible {
-    animation: slideInLeft 0.8s ease forwards; /* Aplicar la animación cuando se haga visible */
-  }
-  
 .section__comentarios{
-    background-color: #4d1a1a;
+    background:linear-gradient(#4d1a1a,black);
     border-radius: 20px;
     width: 80%;
     height: 100%;
@@ -378,9 +381,10 @@ svg:hover {
 }
 .titulo__comentarios{
     color: whitesmoke;
-    font-size: 20px;
+    font-size: 40px;
+    font-weight: 700;
     text-align: center;
-    margin: auto;
+    margin-top: 30px;
 }
 .slider-contenedor{
     display: flex;
@@ -403,12 +407,15 @@ svg:hover {
         object-fit: cover;
     }
     p{
-        color: whitesmoke;
+        color: grey;
         font-weight: 700;
+        width: 80%;
+        text-align: center;
     }
     h3{
-        color: whitesmoke;
+        color: grey;
         font-weight: 700;
+        font-size: 30px;
     }
     .button__comentarios{
         background-color: #847974;
@@ -595,89 +602,7 @@ svg:hover {
     font-size: 20px;
     color: #574e49;
 }
-@media (max-width: 768px) {
-    .comentar {
-        h1 {
-            font-size: 24px;
-        }
 
-        p {
-            font-size: 18px;
-        }
-
-        button {
-            width: 300px;
-            font-size: 12px;
-            padding: 15px;
-        }
-        button:hover{
-            background-color:#f2f2f2;
-            transition: all .5s;
-            font-size: 15px;
-            padding: 20px;
-        }
-    }
-    
-
-    .volver {
-        padding: 15px;
-        a {
-            font-size: 14px;
-        }
-    }
-}
-
-/* Pantallas de smartphones grandes (ancho máximo de 600px) */
-@media (max-width: 600px) {
-    .comentar {
-        h1 {
-            font-size: 20px;
-        }
-
-        p {
-            font-size: 16px;
-        }
-
-        button {
-            width: 250px;
-            font-size: 13px;
-            padding: 12px;
-        }
-    }
-
-    .volver {
-        padding: 12px;
-        a {
-            font-size: 13px;
-        }
-    }
-}
-
-/* Pantallas de smartphones pequeños (ancho máximo de 400px) */
-@media (max-width: 400px) {
-    .comentar {
-        h1 {
-            font-size: 18px;
-        }
-
-        p {
-            font-size: 14px;
-        }
-
-        button {
-            width: 200px;
-            font-size: 12px;
-            padding: 10px;
-        }
-    }
-
-    .volver {
-        padding: 10px;
-        a {
-            font-size: 12px;
-        }
-    }
-}
 
 /* Contacto */
 .contacto{
@@ -685,6 +610,7 @@ svg:hover {
     justify-content: space-around;
     align-items: center;
     width: 100%;
+    margin-top: 70px;
 }
 /* Login */
 .login {
@@ -810,49 +736,6 @@ textarea {
 }
 
 /* Sección "¿Por qué elegir Wine City?" */
-.wine-city {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #574e49;
-    color: aliceblue;
-}
-
-.wine-city h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-}
-
-.wine-city__content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.wine-city__item {
-    max-width: 300px;
-    margin: 20px;
-    text-align: left;
-    background-color: #2e2926;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s;
-}
-
-.wine-city__item:hover {
-    transform: translateY(-5px);
-}
-
-.wine-city__img {
-    width: 400px;
-    height: auto;
-    border-radius: 10px;
-}
-
-.wine-city__text {
-    font-size: 1rem;
-    margin-top: 10px;
-}
 
 .sobre__nosotros{
     background: linear-gradient(#574e49,black);
@@ -919,86 +802,13 @@ textarea {
 
 
 
-/*-------------------------------------------------------------------------SEGUNDO BODY---------------------------------------------------------------------------*/
-/* Header */
-.header {
-    background-color:#4b3132;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-weight: 700;
-}
-
-.nav-link{
-    color: #aeb18e;
-}
-.nav-link:hover{
-    transition: all 1.5s;
-    color: #99496f;
-}
-.list {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    list-style: none;
-}
-
-.link {
-    text-decoration: none;
-    color: whitesmoke;
-    padding: 15px;
-    cursor: pointer;
-    font-size: 20px;
-    background-color: #2e2926;
-    border-radius: 20px;
-    margin: 10px;
-}
-
-.link:hover {
-    color: #847974;
-    transition: all 0.5s;
-}
-
-.redes .red {
-    margin: 10px;
-}
-
-svg {
-    margin: 10px;
-    color: #aeb18e;
-    width: 45px;
-    height: auto;
-}
-
-svg:hover {
-    color: #2e2926;
-    overflow: hidden;
-    transition: all 0.5s;
-}
-
-/* Home */
-.home {
-    background-image: url(./multimedia/degustacion\ \(1\).webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
-    min-height: 110vh;
-}
-
-.home__img {
-    width: 70%;
-    height: 60%;
-}
-
-
-
-
 /* Paquetes */
 .paquetes__title {
     color: rgb(190, 190, 190);
-    font-size: 30px;
-    font-weight: 700;
+    font-size: 50px;
+    font-weight: 800;
     text-align: center;
+    padding: 50px;
 }
 
 /* Cards */
@@ -1053,46 +863,57 @@ svg:hover {
 /* Vino */
 .wine {
     margin: auto;
+    height: 80vh;
 }
 
 .wine h2 {
-    display: flex;
     color: gainsboro;
     font-size: 30px;
     font-weight: 700;
     padding: 40px;
-    justify-content: center;
+   text-align: center;
 }
 
 .wine2 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    color: whitesmoke;
     padding: 30px;
+    justify-content: space-around;
+    .competencia{
+        background:linear-gradient(to right, #590f0f,black);
+        padding: 20px;
+        border-radius: 20px;
+        
+        ul{
+            list-style: none;
+            li{
+                font-size: 20px;
+                margin: 10px;
+                font-weight: 800;
+            }
+        }
+    }
 }
-
 .wine2 p {
-    height: 100%;
-    color: rgba(0, 0, 0, 0.884);
+    background:linear-gradient(to right,black, #590f0f);
+    height: 250px;
+    color: whitesmoke;
     font-size: 20px;
     display: flex;
     justify-content: start;
     font-weight: 700;
-    width: 100%;
+    width: 30%;
     border-radius: 20px;
     box-shadow: 30px 30px 30px black;
     padding: 20px;
     text-align: center;
-    background: #EABE3F;
 }
 
-.wine__img {
-    width: 90%;
-    height: auto;
-    margin: 20px;
-    border-radius: 20px;
-    box-shadow: 30px 30px 30px grey;
-}
+
+
+
 
 
 /* Paquetes */
@@ -1836,6 +1657,89 @@ footer {
     @media (max-width: 360px) { 
         h1 {
             font-size: 10px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .comentar {
+        h1 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        button {
+            width: 300px;
+            font-size: 12px;
+            padding: 15px;
+        }
+        button:hover{
+            background-color:#f2f2f2;
+            transition: all .5s;
+            font-size: 15px;
+            padding: 20px;
+        }
+    }
+    
+
+    .volver {
+        padding: 15px;
+        a {
+            font-size: 14px;
+        }
+    }
+}
+
+/* Pantallas de smartphones grandes (ancho máximo de 600px) */
+@media (max-width: 600px) {
+    .comentar {
+        h1 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        button {
+            width: 250px;
+            font-size: 13px;
+            padding: 12px;
+        }
+    }
+
+    .volver {
+        padding: 12px;
+        a {
+            font-size: 13px;
+        }
+    }
+}
+
+/* Pantallas de smartphones pequeños (ancho máximo de 400px) */
+@media (max-width: 400px) {
+    .comentar {
+        h1 {
+            font-size: 18px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        button {
+            width: 200px;
+            font-size: 12px;
+            padding: 10px;
+        }
+    }
+
+    .volver {
+        padding: 10px;
+        a {
+            font-size: 12px;
         }
     }
 }
