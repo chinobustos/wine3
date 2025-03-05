@@ -1002,51 +1002,6 @@ textarea {
     }
 }
 
-/* Sección "¿Por qué elegir Wine City?" */
-.wine-city {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #574e49;
-    color: aliceblue;
-}
-
-.wine-city h2 {
-    font-size: 2rem;
-    margin-bottom: 30px;
-}
-
-.wine-city__content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.wine-city__item {
-    width: 90%;
-    margin: 10px 0;
-    text-align: left;
-    background-color: #2e2926;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s;
-}
-
-.wine-city__item:hover {
-    transform: translateY(-5px);
-}
-
-.wine-city__img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.wine-city__text {
-    font-size: 1rem;
-    margin-top: 10px;
-}
-
 
 
 @media (max-width: 768px) {
@@ -1741,5 +1696,73 @@ footer {
         a {
             font-size: 12px;
         }
+    }
+}
+/* Para pantallas de hasta 1024px (tablets y dispositivos medianos) */
+@media (max-width: 1024px) {
+    .wine2 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .wine2 p {
+        width: 80%;
+        height: auto;
+        font-size: 18px;
+        justify-content: center;
+    }
+}
+
+/* Para pantallas de hasta 768px (tablets en modo vertical) */
+@media (max-width: 768px) {
+    .wine h2 {
+        font-size: 24px;
+        padding: 20px;
+    }
+
+    .wine2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wine2 .competencia {
+        padding: 15px;
+    }
+
+    .wine2 p {
+        width: 90%;
+        font-size: 16px;
+        padding: 15px;
+        box-shadow: 15px 15px 15px black;
+    }
+}
+
+/* Para pantallas de hasta 480px (móviles) */
+@media (max-width: 480px) {
+    .wine {
+        height: auto;
+        padding: 20px;
+    }
+
+    .wine h2 {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .wine2 {
+        padding: 10px;
+    }
+
+    .wine2 .competencia ul li {
+        font-size: 16px;
+        margin: 5px;
+    }
+
+    .wine2 p {
+        width: 100%;
+        font-size: 14px;
+        padding: 10px;
+        box-shadow: none;
+        height: auto;
     }
 }
